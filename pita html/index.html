@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pita</title>
+</head>
+<body>
+    <fieldset style="width: fit-content; background-color: aqua;  border-radius: 15px;">
+        <legend style="border: 2px solid black; background-color: aqua; border-radius: 15px;">Pitagorasz</legend>
+    <img src="Pitagorasz_3.jpg" style="width: 200px;"><br>
+    <input type="number" placeholder="a" id="pitaa" style="background-color:deepskyblue ;">
+    <input type="number" placeholder="b" id="pitab" style="background-color: deepskyblue;">
+    <button onclick="pita(pitaa.value,pitab.value)" style="background-color: deepskyblue;"> SZÁMÍT</button>
+    <p>eredmeny</p>
+    <p><span id="C"></span></p>
+    <script>
+        function pita(a,b){
+            var C = 0
+            document.getElementById("C").innerHTML=Math.sqrt(a*a+b*b)
+        }
+    </script>
+    </fieldset>
+</body>
+</html>
